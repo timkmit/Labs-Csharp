@@ -129,7 +129,7 @@ namespace Lab2
 
             Console.WriteLine();
 
-            Console.WriteLine("4---------------");
+            Console.WriteLine("5---------------");
 
             Console.WriteLine("Название фигуры: {0}", ap.Name);
             Console.WriteLine("Площадь фигуры: {0}", ap.GetArea());
@@ -155,7 +155,7 @@ namespace Lab2
 
             Console.WriteLine();
 
-            Console.WriteLine("4---------------");
+            Console.WriteLine("6---------------");
 
             Console.WriteLine("Название фигуры: {0}", pent1.Name);
             Console.WriteLine("Площадь фигуры: {0}", pent1.GetArea());
@@ -164,6 +164,32 @@ namespace Lab2
 
             Console.WriteLine("Название фигуры: {0}", pent2.Name);
             Console.WriteLine("Площадь фигуры: {0}", pent2.GetArea());
+
+
+            Decagon dec1 = new()
+            {
+                Name = "Правильный десятиугольник 1",
+                Radius = 2,
+                Side = 3
+            };
+            Decagon dec2 = new()
+            {
+                Name = "Правильный десятиугольник 2",
+                Radius = 4,
+                Side = 5
+            };
+
+            Console.WriteLine();
+
+            Console.WriteLine("7---------------");
+
+            Console.WriteLine("Название фигуры: {0}", dec1.Name);
+            Console.WriteLine("Площадь фигуры: {0}", dec1.GetArea());
+
+            Console.WriteLine();
+
+            Console.WriteLine("Название фигуры: {0}", dec2.Name);
+            Console.WriteLine("Площадь фигуры: {0}", dec2.GetArea());
 
 
         }
