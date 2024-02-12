@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab2
 {
-    class Circle : Figure
+    class Pentagon : Figure
     {
+        public double Side { get; set; }
+
         public double Radius { get; set; }
 
         public override double GetArea()
         {
-            return Radius * Radius * 3.14;
+            return Side * Radius * 0.5 * 5;
             throw new NotImplementedException();
         }
-
     }
 }

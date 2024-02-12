@@ -1,18 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Lab2
 {
-    class Circle : Figure
+    class Parallelogram : Figure
     {
-        public double Radius { get; set; }
+        public double Side { get; set; }
+        public double Height { get; set; }
+
 
         public override double GetArea()
         {
-            return Radius * Radius * 3.14;
+            return Side * Height;
             throw new NotImplementedException();
         }
 

@@ -38,15 +38,13 @@ namespace Lab2
 
             Circle ac = new()
             {
-                Name = "Круг АС",
-                Height = 2,
-                Width = 3
+                Name = "Круг 1",
+                Radius = 10,
             };
             Circle bc = new()
             {
-                Name = "Круг БС",
-                Height = 4,
-                Width = 5
+                Name = "Круг 2",
+                Radius = 9,
             };
 
             Console.WriteLine();
@@ -64,15 +62,17 @@ namespace Lab2
 
             Trapezoid at = new()
             {
-                Name = "Трапеция АТ",
+                Name = "Трапеция 1",
                 Height = 2,
-                Width = 3
+                Side = 3,
+                Side2 = 4,
             };
             Trapezoid bt = new()
             {
-                Name = "Трапеция БТ",
+                Name = "Трапеция 2",
                 Height = 4,
-                Width = 5
+                Side = 5,
+                Side2 = 4,
             };
 
             Console.WriteLine();
@@ -90,15 +90,15 @@ namespace Lab2
 
             Rhomb ar = new()
             {
-                Name = "Ромб АR",
+                Name = "Ромб 1",
                 Height = 2,
-                Width = 3
+                Side = 3
             };
             Rhomb br = new()
             {
-                Name = "Ромб БR",
+                Name = "Ромб 2",
                 Height = 4,
-                Width = 5
+                Side = 5
             };
 
             Console.WriteLine();
@@ -112,6 +112,58 @@ namespace Lab2
 
             Console.WriteLine("Название фигуры: {0}", br.Name);
             Console.WriteLine("Площадь фигуры: {0}", br.GetArea());
+
+
+            Parallelogram ap = new()
+            {
+                Name = "Параллелограм 1",
+                Height = 2,
+                Side = 7
+            };
+            Parallelogram bp = new()
+            {
+                Name = "Параллелограм 2",
+                Height = 4,
+                Side = 6
+            };
+
+            Console.WriteLine();
+
+            Console.WriteLine("4---------------");
+
+            Console.WriteLine("Название фигуры: {0}", ap.Name);
+            Console.WriteLine("Площадь фигуры: {0}", ap.GetArea());
+
+            Console.WriteLine();
+
+            Console.WriteLine("Название фигуры: {0}", bp.Name);
+            Console.WriteLine("Площадь фигуры: {0}", bp.GetArea());
+
+
+            Pentagon pent1 = new()
+            {
+                Name = "Правильный пятиугольник 1",
+                Radius = 2,
+                Side = 3
+            };
+            Pentagon pent2 = new()
+            {
+                Name = "Правильный пятиугольник 2",
+                Radius = 4,
+                Side = 5
+            };
+
+            Console.WriteLine();
+
+            Console.WriteLine("4---------------");
+
+            Console.WriteLine("Название фигуры: {0}", pent1.Name);
+            Console.WriteLine("Площадь фигуры: {0}", pent1.GetArea());
+
+            Console.WriteLine();
+
+            Console.WriteLine("Название фигуры: {0}", pent2.Name);
+            Console.WriteLine("Площадь фигуры: {0}", pent2.GetArea());
 
 
         }

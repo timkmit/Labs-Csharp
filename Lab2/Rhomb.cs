@@ -8,13 +8,13 @@ namespace Lab2
 {
     class Rhomb : Figure
     {
-        public double Width { get; set; }
+        public double Side { get; set; }
 
         public double Height { get; set; }
 
         public override double GetArea()
         {
-            return Width * Height;
+            return Side * Height;
             throw new NotImplementedException();
         }
     }
