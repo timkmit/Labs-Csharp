@@ -6,8 +6,8 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("LAb 1");
-            Console.WriteLine("MAde Timur Engalytchev");
+            Console.WriteLine("Лабораторная 1");
+            Console.WriteLine("Сделал Timur Engalytchev");
 
             Complex a = new() { Real = 3, Imag = 0.5 };
             Complex b = new() { Real = 2, Imag = 0.8 };
