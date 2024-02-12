@@ -88,6 +88,32 @@ namespace Lab2
             Console.WriteLine("Площадь фигуры: {0}", bt.GetArea());
 
 
+            Rhomb ar = new()
+            {
+                Name = "Ромб АR",
+                Height = 2,
+                Width = 3
+            };
+            Rhomb br = new()
+            {
+                Name = "Ромб БR",
+                Height = 4,
+                Width = 5
+            };
+
+            Console.WriteLine();
+
+            Console.WriteLine("4---------------");
+
+            Console.WriteLine("Название фигуры: {0}", ar.Name);
+            Console.WriteLine("Площадь фигуры: {0}", ar.GetArea());
+
+            Console.WriteLine();
+
+            Console.WriteLine("Название фигуры: {0}", br.Name);
+            Console.WriteLine("Площадь фигуры: {0}", br.GetArea());
+
+
         }
     }
 }
